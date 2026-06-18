@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="popup.css"/>
+</head>
+<body>
+  <header>
+    <svg class="mark" width="26" height="26" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M38 30 v12 L20 78 a6 6 0 0 0 5 9 h50 a6 6 0 0 0 5-9 L62 42 V30" fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+      <line x1="34" y1="30" x2="66" y2="30" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+      <path d="M50 74 V48" stroke="#8FB85A" stroke-width="5" stroke-linecap="round"/>
+      <path d="M50 58 C44 52 38 52 34 54 C40 58 46 58 50 58 Z" fill="#8FB85A"/>
+      <path d="M50 52 C56 46 62 46 66 48 C60 52 54 52 50 52 Z" fill="#8FB85A"/>
+    </svg>
+    <div class="htxt">
+      <div class="hname">Laurelin Labs</div>
+      <div class="htag">AEO Schema Scanner</div>
+    </div>
+  </header>
+
+  <div id="pageurl" class="pageurl">Scanning…</div>
+
+  <div id="summary" class="summary"></div>
+
+  <div id="results">
+    <div class="loading">Reading the page…</div>
+  </div>
+
+  <!-- email capture -->
+  <section class="capture">
+    <h2>Get the full AEO picture</h2>
+    <p class="cap-sub">A consultant review of your entity authority, or our answer-engine briefing.</p>
+    <form id="leadForm">
+      <input type="text" id="lname" placeholder="Name" autocomplete="name"/>
+      <input type="email" id="lemail" placeholder="Work email" autocomplete="email" required/>
+      <div class="opts">
+        <label><input type="checkbox" id="optConsult" checked/> Consultancy review</label>
+        <label><input type="checkbox" id="optNews"/> Newsletter</label>
+      </div>
+      <button type="submit" id="leadBtn">Request</button>
+      <div id="leadMsg" class="leadmsg"></div>
+    </form>
+  </section>
+
+  <footer>
+    <span>Laurelin Labs · AEO</span>
+    <a id="siteLink" href="https://laurelinlabs.com" target="_blank" rel="noopener">laurelinlabs.com</a>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

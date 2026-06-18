@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Node (not used at runtime, but in case of tooling)
+node_modules/
+
+# Packaging artefacts
+*.zip
+
+# Internal / not for the public repo
+HANDOFF.md
+icons/icon.svg
